@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <title>Dashboard Financiero</title>
+</head>
+
+<body>
+  <header>
+    <div class="titulo">
+      <a href="#">
+        <img class="logo" src="images/logo.png" alt="Dashboard" title="Dashboard">
+      </a>
+      <h1>Dashboard Financiero</h1>
+    </div>
+    <nav>
+      <ul class="nav-header">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+  </header>
+  <main>
+    <section class="indice-container">
+      <div id="USD"></div>
+      <div id="EUR"></div>
+      <div id="JPY"></div>
+      <div id="BRL"></div>
+      <div id="ARS"></div>
+      <div id="PEN"></div>
+      <div id="VEF"></div>
+      <div id="IDR"></div>
+      <div id="KRW"></div>
+      <div id="MXN"></div>
+    </section>
+    <section class="dashboard-container">
+      <div class="graph1"><canvas id="Chart1"></canvas></div>
+      <div class="graph_right"><canvas id="Chart2"></canvas></div>
+      <div class="table_right">
+        <table class="table1">
+          <tr>
+            <td class="td1" id="table_r1c1"></td>
+            <td class="td2" id="table_r1c2"></td>
+          </tr>
+          <tr>
+            <td class="td1" id="table_r2c1"></td>
+            <td class="td2" id="table_r2c2"></td>
+          </tr>
+          <tr>
+            <td class="td1" id="table_r3c1"></td>
+            <td class="td2" id="table_r3c2"></td>
+          </tr>
+          <tr>
+            <td class="td1" id="table_r4c1"></td>
+            <td class="td2" id="table_r4c2"></td>
+          </tr>
+          <tr>
+            <td class="td1" id="table_r5c1"></td>
+            <td class="td2" id="table_r5c2"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="graph_bottom">
+        <p>Free Cash Flow</p>
+        <canvas id="doughnut1" aria-label="chart" height="150" width="360"></canvas>
+      </div>
+      <div id="articleFinance" class="articleFinance">
+        <div id="1171307" class="articleLog"></div>
+        <div id="1168740" class="articleLog"></div>
+        <div id="1167924" class="articleLog"></div>
+      </div>
+    </section>
+    <script src="scripts/script.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
