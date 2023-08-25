@@ -1,35 +1,74 @@
 import { currencyConverter1 } from "./curren_convert1.js";
-import { currencyConverter2 } from "./curren_convert2.js";
 import { articleConverter1 } from "./article_convert1.js";
 import { dataTable } from "./mindicador.js"
 import { displayChart1 } from "./chart1.js";
 import { displayChart2 } from "./chart2.js";
 
-let currencypair = ['USD', 'EUR', 'JPY', 'BRL', 'ARS'];
-currencypair.forEach(element => {
-  async function currencyData1() {
-    let url = `https://api.gael.cloud/general/public/monedas/${element}`;
-    const data = await currencyConverter1(url);
-    const a = document.createElement("p");
-    a.style.color = '#d4d4d4';
-    a.innerHTML = `$ <b>${data.Valor}</b> <br> ${data.Codigo}`;
-    document.getElementById(`${element}`).appendChild(a);
-  }
-  currencyData1();
-});
-
-let currencypair2 = ['PEN', 'VEF', 'IDR', 'KRW', 'MXN'];
-currencypair2.forEach(element2 => {
-  async function currencyData2() {
-    let url2 = `https://api.gael.cloud/general/public/monedas/${element2}`;
-    const data2 = await currencyConverter2(url2);
-    const b = document.createElement("p");
-    b.style.color = '#d4d4d4';
-    b.innerHTML = `$ <b>${data2.Valor}</b> <br> ${data2.Codigo}`;
-    document.getElementById(`${element2}`).appendChild(b);
-  }
-  currencyData2();
-});
+async function currencyData1() {
+  let url = `https://api.gael.cloud/general/public/monedas/`;
+  const data = await currencyConverter1(url);
+  let codUSD = data[1].Codigo;
+  let valUSD = data[1].Valor;
+  let codEUR = data[26].Codigo;
+  let valEUR = data[26].Valor;
+  let codJPY = data[58].Codigo;
+  let valJPY = data[58].Valor;
+  let codBRL = data[46].Codigo;
+  let valBRL = data[46].Valor;
+  let codARS = data[37].Codigo;
+  let valARS = data[37].Valor;
+  let codPEN = data[36].Codigo;
+  let valPEN = data[36].Valor;
+  let codVEF = data[5].Codigo;
+  let valVEF = data[5].Valor;
+  let codIDR = data[52].Codigo;
+  let valIDR = data[52].Valor;
+  let codKRW = data[57].Codigo;
+  let valKRW = data[57].Valor;
+  let codMXN = data[42].Codigo;
+  let valMXN = data[42].Valor;
+  const a = document.createElement("p");
+  a.style.color = '#d4d4d4';
+  a.innerHTML = `$ <b>${valUSD}</b> <br> ${codUSD}`;
+  document.getElementById(`${codUSD}`).appendChild(a);
+  const b = document.createElement("p");
+  b.style.color = '#d4d4d4';
+  b.innerHTML = `$ <b>${valEUR}</b> <br> ${codEUR}`;
+  document.getElementById(`${codEUR}`).appendChild(b);
+  const c = document.createElement("p");
+  c.style.color = '#d4d4d4';
+  c.innerHTML = `$ <b>${valJPY}</b> <br> ${codJPY}`;
+  document.getElementById(`${codJPY}`).appendChild(c);
+  const d = document.createElement("p");
+  d.style.color = '#d4d4d4';
+  d.innerHTML = `$ <b>${valBRL}</b> <br> ${codBRL}`;
+  document.getElementById(`${codBRL}`).appendChild(d);
+  const e = document.createElement("p");
+  e.style.color = '#d4d4d4';
+  e.innerHTML = `$ <b>${valARS}</b> <br> ${codARS}`;
+  document.getElementById(`${codARS}`).appendChild(e);
+  const f = document.createElement("p");
+  f.style.color = '#d4d4d4';
+  f.innerHTML = `$ <b>${valPEN}</b> <br> ${codPEN}`;
+  document.getElementById(`${codPEN}`).appendChild(f);
+  const g = document.createElement("p");
+  g.style.color = '#d4d4d4';
+  g.innerHTML = `$ <b>${valVEF}</b> <br> ${codVEF}`;
+  document.getElementById(`${codVEF}`).appendChild(g);
+  const h = document.createElement("p");
+  h.style.color = '#d4d4d4';
+  h.innerHTML = `$ <b>${valIDR}</b> <br> ${codIDR}`;
+  document.getElementById(`${codIDR}`).appendChild(h);
+  const i = document.createElement("p");
+  i.style.color = '#d4d4d4';
+  i.innerHTML = `$ <b>${valKRW}</b> <br> ${codKRW}`;
+  document.getElementById(`${codKRW}`).appendChild(i);
+  const j = document.createElement("p");
+  j.style.color = '#d4d4d4';
+  j.innerHTML = `$ <b>${valMXN}</b> <br> ${codMXN}`;
+  document.getElementById(`${codMXN}`).appendChild(j);
+}
+currencyData1();
 
 let articlepair2 = ['1171307', '1168740', '1167924'];
 articlepair2.forEach(idarticle => {
@@ -58,8 +97,6 @@ async function dataTable1() {
   let val4 = data.tpm.valor;
   let nom5 = data.tasa_desempleo.nombre;
   let val5 = data.tasa_desempleo.valor;
-  console.log(nom1);
-  console.log(val1)
   const a = document.createElement("p");
   a.style.color = '#d4d4d4';
   a.innerHTML = `<p>${nom1}</p>`;
