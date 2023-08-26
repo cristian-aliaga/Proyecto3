@@ -1,3 +1,10 @@
+Dashboard - Financiero
+API List:
+- api.gael.cloud
+- ms-finance.p.rapidapi.com
+- mindicador.cl
+- api.coindesk.com
+
 1er Commit: Layout HTML y CSS.
 2do Commit: Scripts JavaScript:
     -Articulos.
