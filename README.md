@@ -7,3 +7,4 @@
     -Tabla de valores principales.
 3er Commit: Correccion ruta script.
 4to Commit: Por bloqueo de API, se elimina consulta recursiva (ForEach). 
+5to Commit: se agrega gráfico "Doughnut - Bitcoint Price". 

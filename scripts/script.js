@@ -1,8 +1,9 @@
 import { currencyConverter1 } from "./curren_convert1.js";
 import { articleConverter1 } from "./article_convert1.js";
-import { dataTable } from "./mindicador.js"
+import { displayDoughnut } from "./doughnut.js"
 import { displayChart1 } from "./chart1.js";
 import { displayChart2 } from "./chart2.js";
+import { dataTable } from "./mindicador.js";
 
 async function currencyData1() {
   let url = `https://api.gael.cloud/general/public/monedas/`;
@@ -141,3 +142,4 @@ async function dataTable1() {
 dataTable1();
 displayChart1();
 displayChart2();
+displayDoughnut();
