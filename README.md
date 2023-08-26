@@ -1,5 +1,5 @@
 ## Dashboard - Financiero
-*Proyecto 3: Dashboard con consumo de APIs públicas.*
+*Proyecto 3: Dashboard con **API públicas** y **ChartJS**.*
 ### URL Pública Dashboard:
 <https://cristian-aliaga.github.io/Proyecto3/>
 ### API List utilizadas:
@@ -21,6 +21,8 @@
 4. 4to Commit: Por bloqueo de API, se elimina consulta recursiva (ForEach). 
 5. 5to Commit: se agrega gráfico "Doughnut - Bitcoint Price". 
 6. 6to Commit: se agrega documentasción archivo README.md. 
+7. 7to Commit: se corrige el formato de la tabla de valores de $ a %, y modificaciones al achivo README.md.  
+![Error](./docs/error_valores.png)
 
 ## Layout
 *El Dashboard muestra en la parte superior con información de los indices bursatiles, en la parte central cuenta con un gráfico principal del historico mensual del comportamiento del valor del dolar y euro, también cuenta con un gráfico secundario con el valor de la UF y una tabla con indices. En la parte inferios se ve un gráfico con información del precio de Bitcoin y a la derecha se despliegan noticias bursatiles.*

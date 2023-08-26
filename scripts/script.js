@@ -90,14 +90,14 @@ async function dataTable1() {
   const data = await dataTable(url);
   let nom1 = data.uf.nombre;
   let val1 = data.uf.valor;
-  let nom2 = data.ipc.nombre;
-  let val2 = data.ipc.valor;
+  let nom2 = data.tasa_desempleo.nombre;
+  let val2 = data.tasa_desempleo.valor;
   let nom3 = data.imacec.nombre;
   let val3 = data.imacec.valor;
   let nom4 = data.tpm.nombre;
   let val4 = data.tpm.valor;
-  let nom5 = data.tasa_desempleo.nombre;
-  let val5 = data.tasa_desempleo.valor;
+  let nom5 = data.ipc.nombre;
+  let val5 = data.ipc.valor;
   const a = document.createElement("p");
   a.style.color = '#d4d4d4';
   a.innerHTML = `<p>${nom1}</p>`;
@@ -112,7 +112,7 @@ async function dataTable1() {
   document.getElementById(`table_r2c1`).appendChild(c);
   const d = document.createElement("p");
   d.style.color = '#d4d4d4';
-  d.innerHTML = `<p>$${val2}</p>`;
+  d.innerHTML = `<p>${val2}%</p>`;
   document.getElementById(`table_r2c2`).appendChild(d);
   const e = document.createElement("p");
   e.style.color = '#d4d4d4';
@@ -120,7 +120,7 @@ async function dataTable1() {
   document.getElementById(`table_r3c1`).appendChild(e);
   const f = document.createElement("p");
   f.style.color = '#d4d4d4';
-  f.innerHTML = `<p>$${val3}</p>`;
+  f.innerHTML = `<p>${val3}%</p>`;
   document.getElementById(`table_r3c2`).appendChild(f);
   const g = document.createElement("p");
   g.style.color = '#d4d4d4';
@@ -128,7 +128,7 @@ async function dataTable1() {
   document.getElementById(`table_r4c1`).appendChild(g);
   const h = document.createElement("p");
   h.style.color = '#d4d4d4';
-  h.innerHTML = `<p>$${val4}</p>`;
+  h.innerHTML = `<p>${val4}%</p>`;
   document.getElementById(`table_r4c2`).appendChild(h);
   const i = document.createElement("p");
   i.style.color = '#d4d4d4';
@@ -136,7 +136,7 @@ async function dataTable1() {
   document.getElementById(`table_r5c1`).appendChild(i);
   const j = document.createElement("p");
   j.style.color = '#d4d4d4';
-  j.innerHTML = `<p>$${val5}</p>`;
+  j.innerHTML = `<p>${val5}%</p>`;
   document.getElementById(`table_r5c2`).appendChild(j);
 }
 dataTable1();
