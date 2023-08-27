@@ -1,12 +1,20 @@
 ## Dashboard - Financiero
 *Proyecto 3: Dashboard con **API públicas** y **ChartJS**.*
-### URL Pública Dashboard:
-<https://cristian-aliaga.github.io/Proyecto3/>
+### URLs:
+**Dashboard** <https://cristian-aliaga.github.io/Proyecto3/>
+
+**Proyecto GitHb** <https://github.com/cristian-aliaga/Proyecto3>
 ### API List utilizadas:
 - api.gael.cloud
 - ms-finance.p.rapidapi.com **[Requiere Key]**
 - mindicador.cl
 - api.coindesk.com
+
+## Prototipo
+![Prototipo](./docs/prototipo.jpg)
+
+## Árbol de archivos
+![Arbol](./docs/tree.jpg)
 
 ### Commits: 
 
@@ -19,10 +27,12 @@
     - Tabla de valores principales.
 3. 3er Commit: Correccion ruta script.
 4. 4to Commit: Por bloqueo de API, se elimina consulta recursiva (ForEach). 
-5. 5to Commit: se agrega gráfico "Doughnut - Bitcoint Price". 
-6. 6to Commit: se agrega documentasción archivo README.md. 
-7. 7to Commit: se corrige el formato de la tabla de valores de $ a %, y modificaciones al achivo README.md.  
+5. 5to Commit: Se agrega gráfico "Doughnut - Bitcoint Price". 
+6. 6to Commit: Se agrega documentasción archivo README.md. 
+7. 7to Commit: Se corrige el formato de la tabla de valores de $ a %, y modificaciones al 
+achivo README.md.  
 ![Error](./docs/error_valores.png)
+8. 8vo Commit: Actualización documentación README.md. 
 
 ## Layout
 *El Dashboard muestra en la parte superior con información de los indices bursatiles, en la parte central cuenta con un gráfico principal del historico mensual del comportamiento del valor del dolar y euro, también cuenta con un gráfico secundario con el valor de la UF y una tabla con indices. En la parte inferios se ve un gráfico con información del precio de Bitcoin y a la derecha se despliegan noticias bursatiles.*
